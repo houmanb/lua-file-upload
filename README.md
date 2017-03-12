@@ -16,7 +16,7 @@ $ PATH / sbin / nginx -c $ PATH / lua-file-upload / nginx.conf
 
 ## Test API
 ```
-Curl -i http: // localhost: 8000 / api
+Curl -i http://localhost:8000/api
 HTTP / 1.1 200 OK
 Date: Tue, 18 Oct 2016 11:20:22 GMT
 Content-Type: application / json
@@ -37,7 +37,7 @@ Content-Type: application / json
 Transfer-Encoding: chunked
 Connection: keep-alive
 
-{"File": "ok.txt", "size": 0, "path": "coreos.me \ / test \ /ok.txt"}
+{"File": "ok.txt", "size": 0, "path": "coreos.me\/test\/ok.txt"}
 ```
 #: If the file exists, replace the file
 ```
@@ -49,6 +49,6 @@ Date: Wed, 19 Oct 2016 02:19:41 GMT
 Content-Type: application / json
 Transfer-Encoding: chunked
 Connection: keep-alive
+
+{"File": "ok.txt", "size": 0, "path": "coreos.me\/test\/ok.txt"}
 ```
-{"File": "ok.txt", "size": 0, "path": "coreos.me \ / test \ /ok.txt"}
-`` ``
