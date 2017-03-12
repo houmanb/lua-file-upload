@@ -28,7 +28,7 @@ Connection: keep-alive
 
 #: File Upload
 ```
-Curl -i -X ​​POST -H "Content-Type: multipart / form-data;" -F "path = test" -F "file = @. / Ok.txt" "http: // localhost: 8000 / api / Upload "
+Curl -i -X POST -H "Content-Type: multipart/form-data;" -F "path=test" -F "file=@./Ok.txt" "http://localhost:8000/api/Upload"
 HTTP / 1.1 100 Continue
 
 HTTP / 1.1 200 OK
@@ -41,7 +41,7 @@ Connection: keep-alive
 ```
 #: If the file exists, replace the file
 ```
-Curl -i -X ​​POST -H "Content-Type: multipart / form-data;" "-F" path = test "-F" force = true "-F" file = @. / Ok.txt "" http: / / Localhost: 8000 / api / upload "
+Curl -i -X POST -H "Content-Type: multipart/form-data;" -F "path=test"  -F "force=true"  -F "file=@./Ok.txt" "http://localhost:8000/api/Upload"
 HTTP / 1.1 100 Continue
 
 HTTP / 1.1 200 OK
